@@ -1,3 +1,7 @@
+#    FrSkyGPS 10Hz firmware
+#    Copyright (C) 2016  David S. Beach
+#    mailto:david.s.beach@gmail.com
+
 cmake_minimum_required(VERSION 3.4)
 
 include(CMakeForceCompiler)
