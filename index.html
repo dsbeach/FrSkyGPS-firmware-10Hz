@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>FrSkyGPS 10hz firmware by dsbeach</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,66 +8,83 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
+</head>
+<body>
     <section class="page-header">
-      <h1 class="project-name">FrSkyGPS 10hz firmware</h1>
-      <h2 class="project-tagline">Open source firmware for FrSkyGPS sensor<br />10Hz update rate</h2>
+        <h1 class="project-name">FrSkyGPS 10hz firmware</h1>
+        <h2 class="project-tagline">Open source firmware for FrSkyGPS sensor<br />
+            10Hz update rate</h2>
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="FrSkyGPS" class="anchor" href="#FrSkyGPS" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FrSky GPS updating 10 times a second?</h3>
+        <h3>
+            <a id="FrSkyGPS" class="anchor" href="#FrSkyGPS" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>FrSky GPS updating 10 times a second?</h3>
 
-<p>There is a lot to like about the FrSky telemetry system. Unfortunately, the GPS-V2 device with the factory firmware isn't very likeable.  The good news is that you can update the firmware yourself and realize the full potential of the GPS V2 hardware.</p>
+        <p>There is a lot to like about the FrSky telemetry system. Unfortunately, the GPS-V2 device with the factory firmware isn't very likeable.  The good news is that you can update the firmware yourself and realize the full potential of the GPS V2 hardware.</p>
 
-      <h3>
-<a id="downloads" class="anchor" href="#downloads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary file downloads</h3>
+        <h3>
+            <a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation is available via GitBook</h3>
 
-<p>February 9th, 2016 - binary downloads are not yet available.  Currently awaiting results from beta testing.</p>
+        <p><a href="https://www.gitbook.com/book/dsbeach/frskygps_10hz_firmware_documentation/details">FrSkyGPS 10Hz Firmware Documentation</a></p>
 
-<h3>
-<a id="hardware" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here is the hardware you will need:</h3>
-<table>
-    <tr>
-        <td><p>FrSky GPS V2 sensor</p>
-        <img src="images/frsky-gps-v2.jpg" />
-</td>
-        <td><p>ST-Link device (STM32F0Discovery shown)</p>
-        <img src="images/stm32f0discovery.jpg" />
-</td>
-        <td><p>1.25mm JST type connector</p>
-        <img src="images/jst-1.25mm.jpg" />
-</td>
-        <td><p>Servo connectors</p>
-        <img src="images/connectors.jpg" />
-</td>
-    </tr>
-</table>
-<h3>
-<a id="pogo-pins" class="anchor" href="#pogo-pins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If you have a bunch to do, you can build a jig and go solderless using &quot;pogo pins&quot; from Sparkfun:</h3>
-<table>
-    <tr>
-        <td><p>My test stand</p>
-        <img src="images/dbeach-pogo-stand.jpg" />
-</td>
-        <td><p>Pogo Pin closeup</p>
-        <img src="images/pogo-pin.jpg" />
-</td>
+        <h3>
+            <a id="downloads" class="anchor" href="#downloads" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary file downloads</h3>
+
+        <p>February 10th, 2016 - binary downloads are available for sensor IDs 1 thru 4</p>
+
+        <p><a href="downloads/FrSkyGPS-10Hz-v0.9-ID1.hex">FrSkyGPS-10Hz-v0.9-ID1.hex</a></p>
+        <p><a href="downloads/FrSkyGPS-10Hz-v0.9-ID2.hex">FrSkyGPS-10Hz-v0.9-ID2.hex</a></p>
+        <p><a href="downloads/FrSkyGPS-10Hz-v0.9-ID3.hex">FrSkyGPS-10Hz-v0.9-ID3.hex</a></p>
+        <p><a href="downloads/FrSkyGPS-10Hz-v0.9-ID4.hex">FrSkyGPS-10Hz-v0.9-ID4.hex</a></p>
+
+        <h3>
+            <a id="hardware" class="anchor" href="#hardware" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here is the hardware you will need:</h3>
+        <table>
+            <tr>
+                <td>
+                    <p>FrSky GPS V2 sensor</p>
+                    <img src="images/frsky-gps-v2.jpg" />
+                </td>
+                <td>
+                    <p>ST-Link device (STM32F0Discovery shown)</p>
+                    <img src="images/stm32f0discovery.jpg" />
+                </td>
+                <td>
+                    <p>1.25mm JST type connector</p>
+                    <img src="images/jst-1.25mm.jpg" />
+                </td>
+                <td>
+                    <p>Servo connectors</p>
+                    <img src="images/connectors.jpg" />
+                </td>
+            </tr>
         </table>
-<h3>
-<a id="rcgroups" class="anchor" href="#rcgroups" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Follow the discussion on RCGroups</h3>
+        <h3>
+            <a id="pogo-pins" class="anchor" href="#pogo-pins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If you have a bunch to do, you can build a jig and go solderless using &quot;pogo pins&quot; from Sparkfun:</h3>
+        <table>
+            <tr>
+                <td>
+                    <p>My test stand</p>
+                    <img src="images/dbeach-pogo-stand.jpg" />
+                </td>
+                <td>
+                    <p>Pogo Pin closeup</p>
+                    <img src="images/pogo-pin.jpg" />
+                </td>
+        </table>
+        <h3>
+            <a id="rcgroups" class="anchor" href="#rcgroups" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Follow the discussion on RCGroups</h3>
 
-<p>Please address your comments to RCGroups at <a href="http://www.rcgroups.com/forums/showthread.php?t=2600818">http://www.rcgroups.com/forums/showthread.php?t=2600818</a></p>
+        <p>Please address your comments to RCGroups at <a href="http://www.rcgroups.com/forums/showthread.php?t=2600818">http://www.rcgroups.com/forums/showthread.php?t=2600818</a></p>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/dsbeach/FrSkyGPS_10Hz_firmware">FrSkyGPS 10hz firmware</a> is maintained by <a href="https://github.com/dsbeach">dsbeach</a>.</span>
+        <footer class="site-footer">
+            <span class="site-footer-owner"><a href="https://github.com/dsbeach/FrSkyGPS_10Hz_firmware">FrSkyGPS 10hz firmware</a> is maintained by <a href="https://github.com/dsbeach">dsbeach</a>.</span>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+            <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using a modified <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+        </footer>
 
     </section>
 
-  
-  </body>
+
+</body>
 </html>
